@@ -3,10 +3,17 @@
 ## Overview
 This Java application is designed to demonstrate the use of `ScheduledExecutorService` for scheduling tasks that generate periodic reports. The program simulates a basic task that prints a message with a timestamp at regular intervals, showcasing how scheduled tasks can be managed in Java.
 
-## Features
-- **Periodic Task Scheduling**: Uses `ScheduledExecutorService` to schedule and execute tasks periodically.
-- **Timestamps in Reports**: Each report includes a timestamp to illustrate the periodic nature of the task.
-- **Customizable Frequency**: Currently configured to generate reports every 10 seconds, but can be adjusted as needed.
+## Key Java Features Used
+- **ScheduledExecutorService**: Manages task scheduling and execution at fixed intervals.
+- **Runnable Interface**: Implements the `Runnable` interface to define the task for generating reports.
+- **Concurrency Utilities**: Utilizes Java's concurrency utilities for thread management and task scheduling.
+- **Exception Handling**: Employs try-catch blocks to handle `InterruptedException`.
+- **Date Class**: Uses the `Date` class for timestamping reports.
+- **Thread Sleep**: Implements `Thread.sleep()` to pause execution, simulating prolonged running of the program.
+- **Graceful Shutdown**: Ensures a smooth shutdown of the executor service, waiting for the completion of all tasks.
+
+These features demonstrate Java's capabilities in handling scheduled tasks and concurrency, making it an ideal example for learning advanced Java concepts related to multithreading and scheduled task execution.
+
 
 ## How to Use
 1. **Run the Application**: Execute the `Main` class.
